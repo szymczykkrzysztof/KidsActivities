@@ -1,0 +1,27 @@
+trigger:
+  branches:
+    include:
+      - main
+      - develop
+
+pr:
+  branches:
+    include:
+      - develop
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  - task: UseDotNet@2
+    inputs:
+      version: '10.x'
+
+  - script: dotnet restore KidsActivities/KidsActivities.sln
+    displayName: 'Restore'
+
+  - script: dotnet build KidsActivities/KidsActivities.sln --no-restore -c Release
+    displayName: 'Build'
+
+  - script: dotnet test KidsActivities/KidsActivities.sln --no-build -c Release
+    displayName: 'Test'
