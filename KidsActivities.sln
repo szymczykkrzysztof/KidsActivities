@@ -6,7 +6,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KidsActivities.Application"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KidsActivities.Infrastructure", "src\KidsActivities.Infrastructure\KidsActivities.Infrastructure.csproj", "{2DA7E27D-5A80-4FE3-AE42-A999B74E5E51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KidsActivities.API", "src\KidsActivities.API \KidsActivities.API.csproj", "{84709FB3-6C78-43BD-9137-079104934B50}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KidsActivities.API", "src\KidsActivities.API\KidsActivities.API.csproj", "{84709FB3-6C78-43BD-9137-079104934B50}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
