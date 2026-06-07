@@ -20,11 +20,11 @@ steps:
   - script: find . -name "*.sln" | head -20
     displayName: 'Debug: Find sln files'
     
-  - script: dotnet restore KidsActivities/KidsActivities.sln
+  - script: dotnet restore KidsActivities.sln
     displayName: 'Restore'
 
-  - script: dotnet build KidsActivities/KidsActivities.sln --no-restore -c Release
+  - script: dotnet build KidsActivities.sln --no-restore -c Release
     displayName: 'Build'
 
-  - script: dotnet test KidsActivities/KidsActivities.sln --no-build -c Release
+  - script: dotnet test KidsActivities.sln --no-build -c Release
     displayName: 'Test'
