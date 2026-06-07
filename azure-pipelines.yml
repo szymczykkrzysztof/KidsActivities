@@ -17,6 +17,9 @@ steps:
     inputs:
       version: '10.x'
 
+  - script: find . -name "*.sln" | head -20
+    displayName: 'Debug: Find sln files'
+    
   - script: dotnet restore KidsActivities/KidsActivities.sln
     displayName: 'Restore'
 
